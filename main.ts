@@ -60,7 +60,7 @@ sprites.onOverlap(SpriteKind.Player2, SpriteKind.Proj1, function (sprite, otherS
     otherSprite.destroy()
 })
 info.onLifeZero(function () {
-    game.splash("Hrac 1 vyhral!")
+    game.splash("Hrac 2 vyhral!")
     game.over(true)
 })
 sprites.onOverlap(SpriteKind.Proj1, SpriteKind.Proj2, function (sprite, otherSprite) {
@@ -68,7 +68,7 @@ sprites.onOverlap(SpriteKind.Proj1, SpriteKind.Proj2, function (sprite, otherSpr
     sprite.destroy()
 })
 info.player2.onLifeZero(function () {
-    game.splash("Hrac 2 vyhral!")
+    game.splash("Hrac 1 vyhral!")
     game.over(true)
 })
 let proj2: Sprite = null
