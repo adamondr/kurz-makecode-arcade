@@ -1,8 +1,8 @@
 scene.setBackgroundColor(9)
 let hrac1 = sprites.create(img`
     . . . . . . f f f f . . . . . . 
-    . . . . f f f 5 5 f f f . . . . 
-    . . . f f f 5 5 5 5 f f f . . . 
+    . . . . f f f 2 2 f f f . . . . 
+    . . . f f f 2 2 2 2 f f f . . . 
     . . f f f e e e e e e f f f . . 
     . . f f e 2 2 2 2 2 2 e e f . . 
     . . f e 2 f f f f f f 2 e f . . 
@@ -35,3 +35,7 @@ let hrac2 = sprites.create(img`
     . . . f f 1 d 1 d 1 d f f . . . 
     . . . . . f f b b f f . . . . . 
     `, SpriteKind.Player)
+controller.moveSprite(hrac1, 0, 100)
+controller.player2.moveSprite(hrac2, 0, 100)
+hrac1.setPosition(15, 60)
+hrac2.setPosition(145, 60)
